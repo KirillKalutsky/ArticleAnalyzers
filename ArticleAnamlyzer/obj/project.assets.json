@@ -1,0 +1,208 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "LemmaGenerator/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/LemmaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net20/LemmaSharp.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "CoreModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CoreModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreModels.dll": {}
+        }
+      },
+      "PythonExecutor/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PythonExecutor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PythonExecutor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LemmaGenerator/1.1.0": {
+      "sha512": "K6beYwJIcRS4lyqjaq7wS8FSrMxG9f0n0dBp+xRhnswnB+WR45AGvLBZ1So1x9RBjHGDCjqYBJ1hktJG0qegRQ==",
+      "type": "package",
+      "path": "lemmagenerator/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Classes/7zip/Compress/LzmaAlone/LzmaAlone.csproj",
+        "content/Classes/7zip/Compress/LzmaAlone/LzmaAlone.sln",
+        "lemmagenerator.1.1.0.nupkg.sha512",
+        "lemmagenerator.nuspec",
+        "lib/net20/LemmaSharp.dll"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "CoreModels/1.0.0": {
+      "type": "project",
+      "path": "../CoreModels/CoreModels/CoreModels.csproj",
+      "msbuildProject": "../CoreModels/CoreModels/CoreModels.csproj"
+    },
+    "PythonExecutor/1.0.0": {
+      "type": "project",
+      "path": "../PythonExecutor/PythonExecutor/PythonExecutor.csproj",
+      "msbuildProject": "../PythonExecutor/PythonExecutor/PythonExecutor.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "CoreModels >= 1.0.0",
+      "LemmaGenerator >= 1.1.0",
+      "Newtonsoft.Json >= 13.0.1",
+      "PythonExecutor >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\ВКР\\Soft\\ArticleAnamlyzer\\ArticleAnamlyzer\\ArticleAnalyzer.csproj",
+      "projectName": "ArticleAnalyzer",
+      "projectPath": "D:\\ВКР\\Soft\\ArticleAnamlyzer\\ArticleAnamlyzer\\ArticleAnalyzer.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "D:\\ВКР\\Soft\\ArticleAnamlyzer\\ArticleAnamlyzer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\ВКР\\Soft\\ArticleAnamlyzer\\CoreModels\\CoreModels\\CoreModels.csproj": {
+              "projectPath": "D:\\ВКР\\Soft\\ArticleAnamlyzer\\CoreModels\\CoreModels\\CoreModels.csproj"
+            },
+            "D:\\ВКР\\Soft\\ArticleAnamlyzer\\PythonExecutor\\PythonExecutor\\PythonExecutor.csproj": {
+              "projectPath": "D:\\ВКР\\Soft\\ArticleAnamlyzer\\PythonExecutor\\PythonExecutor\\PythonExecutor.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "LemmaGenerator": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"LemmaGenerator 1.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net5.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "LemmaGenerator",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[submodule "PythonExecutor"]
+	path = PythonExecutor
+	url = https://github.com/KirillKalutsky/PythonExecutor
+[submodule "CoreModels"]
+	path = CoreModels
+	url = https://github.com/KirillKalutsky/CoreModels

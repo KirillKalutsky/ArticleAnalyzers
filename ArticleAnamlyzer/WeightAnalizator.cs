@@ -1,4 +1,5 @@
 ﻿using LemmaSharp.Classes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,7 +17,8 @@ namespace TextAnalizator
         {
             this.defaultCategory = defaultCategory;
             this.categories = categories;
-            var dataFilepath = @"..\..\..\ArticleAnalyzer\full7z-mlteast-ru.lem";
+            var dataFilepath = @"..\..\..\full7z-mlteast-ru.lem";
+            Console.WriteLine(Path.GetFullPath(dataFilepath));
             FileStream stream = File.OpenRead(dataFilepath);
             lemmatizer = new Lemmatizer(stream);
             stream.Close();

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace TextAnalizator
 {
@@ -20,7 +21,7 @@ namespace TextAnalizator
                 this.districts[district.DistrictName] = district;
             foreach (var adr in addresses)
                 this.districts[adr.AddressName] = adr.District;
-            pythonAnalyzer = new PythonExecutor(@"D:\anaconda\python.exe", @"..\..\..\ArticleAnalyzer\1.py");
+            pythonAnalyzer = new PythonExecutor(@"D:\anaconda\python.exe", Path.GetFullPath(@"..\..\..\1.py"));
         }
 
         public async Task<District> AnalyzeDistrict(string text)

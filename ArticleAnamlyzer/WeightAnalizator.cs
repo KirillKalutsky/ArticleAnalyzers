@@ -30,11 +30,11 @@ namespace TextAnalizator
             {
                 var result = new Dictionary<string, double>();
 
-                var tokens = SplitTextToTokens(text);
+                var words = SplitTextToTokens(text)
+                .Select(token => lemmatizer.Lemmatize(token));
 
-                foreach (var token in tokens)
+                foreach (var word in words)
                 {
-                    var word = lemmatizer.Lemmatize(token);
                     foreach (var val in categories.Keys)
                     {
                         if (categories[val].ContainsKey(word))
@@ -61,7 +61,8 @@ namespace TextAnalizator
         {
             return text.ToLower()
                 .Split(splitSymbols)
-                .Where(token => !(string.IsNullOrEmpty(token) || string.IsNullOrWhiteSpace(token)));
+                .Where(token => !(string.IsNullOrEmpty(token) || string.IsNullOrWhiteSpace(token)))
+                .Distinct();
         }
     }
 }

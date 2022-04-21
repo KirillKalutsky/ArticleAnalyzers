@@ -12,10 +12,12 @@ namespace TextAnalizator
 {
     public class DistrictAnalyzer
     {
-        private Dictionary<string, District> districts;
-        private PythonExecutor pythonAnalyzer;
-        public DistrictAnalyzer(IEnumerable<District> districts, IEnumerable<Address> addresses)
+        private readonly Dictionary<string, District> districts;
+        private readonly PythonExecutor pythonAnalyzer;
+        private readonly string defaultDistrictName;
+        public DistrictAnalyzer(IEnumerable<District> districts, IEnumerable<Address> addresses, string defaultDistrictName = "none")
         {
+            this.defaultDistrictName = defaultDistrictName;
             this.districts = new Dictionary<string, District>();
             foreach (var district in districts)
                 this.districts[district.DistrictName] = district;
@@ -30,8 +32,8 @@ namespace TextAnalizator
 
             var output = JsonConvert.DeserializeObject<ScriptResponse>(res);
 
-            if(output==null)
-                return districts["none"];
+            if(output == null)
+                return districts[defaultDistrictName];
 
             if (output.Names != null)
             {

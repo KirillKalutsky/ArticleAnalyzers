@@ -11,28 +11,7 @@ namespace TextAnalizator
     {
         static async Task Main(string[] args)
         {
-            var j = new JsonSerializerSettings();
-            j.MissingMemberHandling = MissingMemberHandling.Ignore;
-
-            var ser = JsonConvert.SerializeObject
-                (
-                    new List<Event> 
-                    {
-                        new Event() 
-                        {
-                            DateOfDownload = DateTime.Now, 
-                            IncidentCategory="cp",
-                            Title = "Title",
-                            Link = "link",
-                            Source = new Source()
-                        } 
-                    }
-                );
-
-
-            var des = JsonConvert.DeserializeObject<IEnumerable<Event>>(null, j);
-
-            Console.WriteLine(des);
+            
 
             /*var a = new DistrictAnalyzer(new District[] {new District("район называется Правым") }, new Address[0]);
             var res = await a.AnalyzeDistrict("правый");

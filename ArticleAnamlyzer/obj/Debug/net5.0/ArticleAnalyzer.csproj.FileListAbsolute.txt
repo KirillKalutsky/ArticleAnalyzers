@@ -20,3 +20,4 @@ D:\ВКР\Soft\ArticleAnamlyzer\ArticleAnamlyzer\obj\Debug\net5.0\ArticleAnalyze
 D:\ВКР\Soft\ArticleAnamlyzer\ArticleAnamlyzer\obj\Debug\net5.0\ref\ArticleAnalyzer.dll
 D:\ВКР\Soft\ArticleAnamlyzer\ArticleAnamlyzer\obj\Debug\net5.0\ArticleAnalyzer.pdb
 D:\ВКР\Soft\ArticleAnamlyzer\ArticleAnamlyzer\obj\Debug\net5.0\ArticleAnalyzer.genruntimeconfig.cache
+D:\ВКР\Soft\ArticleAnamlyzer\ArticleAnamlyzer\obj\Debug\net5.0\ArticleAnalyzer.csproj.CopyComplete
